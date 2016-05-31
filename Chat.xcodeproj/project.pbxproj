@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040954661CD743FA0047513C /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040954651CD743FA0047513C /* Block.swift */; };
+		040954681CD8A4E90047513C /* ChatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040954671CD8A4E90047513C /* ChatsTableViewController.swift */; };
+		0409546A1CD8A5220047513C /* ChatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040954691CD8A5220047513C /* ChatsTableViewCell.swift */; };
+		04B6B2F61CBCE45A00FB88B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B2F51CBCE45A00FB88B8 /* AppDelegate.swift */; };
+		04B6B2FB1CBCE45A00FB88B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B6B2F91CBCE45A00FB88B8 /* Main.storyboard */; };
+		04B6B2FD1CBCE45A00FB88B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B6B2FC1CBCE45A00FB88B8 /* Assets.xcassets */; };
+		04B6B3001CBCE45A00FB88B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B6B2FE1CBCE45A00FB88B8 /* LaunchScreen.storyboard */; };
+		04B6B3081CBCEE3100FB88B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B3071CBCEE3100FB88B8 /* LoginViewController.swift */; };
+		04B6B30A1CBCEE4600FB88B8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6B3091CBCEE4600FB88B8 /* SignUpViewController.swift */; };
+		04CEF4331CBE45E9004E57DF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4301CBE45E8004E57DF /* libsqlite3.tbd */; };
+		04CEF4341CBE45E9004E57DF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4311CBE45E9004E57DF /* libz.tbd */; };
+		04CEF4351CBE45E9004E57DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4321CBE45E9004E57DF /* SystemConfiguration.framework */; };
+		04CEF4791CBE52FC004E57DF /* backendless.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4781CBE52FC004E57DF /* backendless.a */; };
+		04CEF47B1CBE530F004E57DF /* CommLibiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF47A1CBE530F004E57DF /* CommLibiOS.a */; };
+		04CEF47D1CBE532B004E57DF /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF47C1CBE532B004E57DF /* libavcodec.a */; };
+		04CEF47F1CBE532D004E57DF /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF47E1CBE532D004E57DF /* libavdevice.a */; };
+		04CEF4811CBE5331004E57DF /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4801CBE5331004E57DF /* libavfilter.a */; };
+		04CEF4831CBE5334004E57DF /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4821CBE5334004E57DF /* libavformat.a */; };
+		04CEF4851CBE5339004E57DF /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4841CBE5339004E57DF /* libavutil.a */; };
+		04CEF4871CBE533C004E57DF /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4861CBE533C004E57DF /* libswscale.a */; };
+		04CEF4891CBE533E004E57DF /* MediaLibiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF4881CBE533E004E57DF /* MediaLibiOS.a */; };
+		04CEF48B1CBE5343004E57DF /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF48A1CBE5343004E57DF /* libspeex.a */; };
+		04CEF48D1CBE5348004E57DF /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CEF48C1CBE5348004E57DF /* libx264.a */; };
+		04D9BCDB1CC4CE6E0017D44A /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BCDA1CC4CE6E0017D44A /* UsersViewController.swift */; };
+		04D9BCDD1CC4CEB30017D44A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BCDC1CC4CEB30017D44A /* UserTableViewCell.swift */; };
+		04D9BCDF1CC636370017D44A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BCDE1CC636370017D44A /* ChatViewController.swift */; };
+		04F776A01CC780B7002BDCAC /* ChatMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7769F1CC780B7002BDCAC /* ChatMessages.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040954651CD743FA0047513C /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		040954671CD8A4E90047513C /* ChatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTableViewController.swift; sourceTree = "<group>"; };
+		040954691CD8A5220047513C /* ChatsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsTableViewCell.swift; sourceTree = "<group>"; };
+		04B6B2F21CBCE45A00FB88B8 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B6B2F51CBCE45A00FB88B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04B6B2FA1CBCE45A00FB88B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04B6B2FC1CBCE45A00FB88B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04B6B2FF1CBCE45A00FB88B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04B6B3011CBCE45A00FB88B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B6B3071CBCEE3100FB88B8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04B6B3091CBCEE4600FB88B8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		04CEF4301CBE45E8004E57DF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		04CEF4311CBE45E9004E57DF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		04CEF4321CBE45E9004E57DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		04CEF46B1CBE5073004E57DF /* backendless */ = {isa = PBXFileReference; lastKnownFileType = folder; name = backendless; path = lib/backendless; sourceTree = "<group>"; };
+		04CEF46C1CBE5073004E57DF /* CommLibiOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CommLibiOS; path = lib/CommLibiOS; sourceTree = "<group>"; };
+		04CEF46D1CBE5073004E57DF /* libav-11.4 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "libav-11.4"; path = "lib/libav-11.4"; sourceTree = "<group>"; };
+		04CEF46E1CBE5073004E57DF /* MediaLibiOS3x */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MediaLibiOS3x; path = lib/MediaLibiOS3x; sourceTree = "<group>"; };
+		04CEF46F1CBE5073004E57DF /* speex-1.2rc2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "speex-1.2rc2"; path = "lib/speex-1.2rc2"; sourceTree = "<group>"; };
+		04CEF4701CBE5073004E57DF /* x264 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = x264; path = lib/x264; sourceTree = "<group>"; };
+		04CEF4771CBE516C004E57DF /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		04CEF4781CBE52FC004E57DF /* backendless.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = backendless.a; path = lib/backendless/backendless.a; sourceTree = "<group>"; };
+		04CEF47A1CBE530F004E57DF /* CommLibiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = CommLibiOS.a; path = lib/CommLibiOS/CommLibiOS.a; sourceTree = "<group>"; };
+		04CEF47C1CBE532B004E57DF /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "lib/libav-11.4/lib/libavcodec.a"; sourceTree = "<group>"; };
+		04CEF47E1CBE532D004E57DF /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "lib/libav-11.4/lib/libavdevice.a"; sourceTree = "<group>"; };
+		04CEF4801CBE5331004E57DF /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "lib/libav-11.4/lib/libavfilter.a"; sourceTree = "<group>"; };
+		04CEF4821CBE5334004E57DF /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "lib/libav-11.4/lib/libavformat.a"; sourceTree = "<group>"; };
+		04CEF4841CBE5339004E57DF /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "lib/libav-11.4/lib/libavutil.a"; sourceTree = "<group>"; };
+		04CEF4861CBE533C004E57DF /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "lib/libav-11.4/lib/libswscale.a"; sourceTree = "<group>"; };
+		04CEF4881CBE533E004E57DF /* MediaLibiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = MediaLibiOS.a; path = lib/MediaLibiOS3x/MediaLibiOS.a; sourceTree = "<group>"; };
+		04CEF48A1CBE5343004E57DF /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libspeex.a; path = "lib/speex-1.2rc2/lib/libspeex.a"; sourceTree = "<group>"; };
+		04CEF48C1CBE5348004E57DF /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = lib/x264/lib/libx264.a; sourceTree = "<group>"; };
+		04D9BCDA1CC4CE6E0017D44A /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		04D9BCDC1CC4CEB30017D44A /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		04D9BCDE1CC636370017D44A /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		04F7769F1CC780B7002BDCAC /* ChatMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessages.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B6B2EF1CBCE45900FB88B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CEF4331CBE45E9004E57DF /* libsqlite3.tbd in Frameworks */,
+				04CEF4341CBE45E9004E57DF /* libz.tbd in Frameworks */,
+				04CEF4351CBE45E9004E57DF /* SystemConfiguration.framework in Frameworks */,
+				04CEF4791CBE52FC004E57DF /* backendless.a in Frameworks */,
+				04CEF47B1CBE530F004E57DF /* CommLibiOS.a in Frameworks */,
+				04CEF47D1CBE532B004E57DF /* libavcodec.a in Frameworks */,
+				04CEF47F1CBE532D004E57DF /* libavdevice.a in Frameworks */,
+				04CEF4811CBE5331004E57DF /* libavfilter.a in Frameworks */,
+				04CEF4831CBE5334004E57DF /* libavformat.a in Frameworks */,
+				04CEF4851CBE5339004E57DF /* libavutil.a in Frameworks */,
+				04CEF4871CBE533C004E57DF /* libswscale.a in Frameworks */,
+				04CEF4891CBE533E004E57DF /* MediaLibiOS.a in Frameworks */,
+				04CEF48B1CBE5343004E57DF /* libspeex.a in Frameworks */,
+				04CEF48D1CBE5348004E57DF /* libx264.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B6B2E91CBCE45900FB88B8 = {
+			isa = PBXGroup;
+			children = (
+				04CEF4771CBE516C004E57DF /* Bridging-Header.h */,
+				04CEF46A1CBE504E004E57DF /* lib */,
+				04CEF4301CBE45E8004E57DF /* libsqlite3.tbd */,
+				04CEF4311CBE45E9004E57DF /* libz.tbd */,
+				04CEF4321CBE45E9004E57DF /* SystemConfiguration.framework */,
+				04B6B2F41CBCE45A00FB88B8 /* Chat */,
+				04B6B2F31CBCE45A00FB88B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B6B2F31CBCE45A00FB88B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B6B2F21CBCE45A00FB88B8 /* Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B6B2F41CBCE45A00FB88B8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				04B6B2F51CBCE45A00FB88B8 /* AppDelegate.swift */,
+				04B6B2F91CBCE45A00FB88B8 /* Main.storyboard */,
+				04B6B2FC1CBCE45A00FB88B8 /* Assets.xcassets */,
+				04B6B2FE1CBCE45A00FB88B8 /* LaunchScreen.storyboard */,
+				04B6B3011CBCE45A00FB88B8 /* Info.plist */,
+				04B6B3071CBCEE3100FB88B8 /* LoginViewController.swift */,
+				04B6B3091CBCEE4600FB88B8 /* SignUpViewController.swift */,
+				04D9BCDA1CC4CE6E0017D44A /* UsersViewController.swift */,
+				04D9BCDC1CC4CEB30017D44A /* UserTableViewCell.swift */,
+				04D9BCDE1CC636370017D44A /* ChatViewController.swift */,
+				04F7769F1CC780B7002BDCAC /* ChatMessages.swift */,
+				040954651CD743FA0047513C /* Block.swift */,
+				040954671CD8A4E90047513C /* ChatsTableViewController.swift */,
+				040954691CD8A5220047513C /* ChatsTableViewCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		04CEF46A1CBE504E004E57DF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				04CEF48C1CBE5348004E57DF /* libx264.a */,
+				04CEF48A1CBE5343004E57DF /* libspeex.a */,
+				04CEF4881CBE533E004E57DF /* MediaLibiOS.a */,
+				04CEF4861CBE533C004E57DF /* libswscale.a */,
+				04CEF4841CBE5339004E57DF /* libavutil.a */,
+				04CEF4821CBE5334004E57DF /* libavformat.a */,
+				04CEF4801CBE5331004E57DF /* libavfilter.a */,
+				04CEF47E1CBE532D004E57DF /* libavdevice.a */,
+				04CEF47C1CBE532B004E57DF /* libavcodec.a */,
+				04CEF47A1CBE530F004E57DF /* CommLibiOS.a */,
+				04CEF4781CBE52FC004E57DF /* backendless.a */,
+				04CEF46B1CBE5073004E57DF /* backendless */,
+				04CEF46C1CBE5073004E57DF /* CommLibiOS */,
+				04CEF46D1CBE5073004E57DF /* libav-11.4 */,
+				04CEF46E1CBE5073004E57DF /* MediaLibiOS3x */,
+				04CEF46F1CBE5073004E57DF /* speex-1.2rc2 */,
+				04CEF4701CBE5073004E57DF /* x264 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B6B2F11CBCE45900FB88B8 /* Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B6B3041CBCE45A00FB88B8 /* Build configuration list for PBXNativeTarget "Chat" */;
+			buildPhases = (
+				04B6B2EE1CBCE45900FB88B8 /* Sources */,
+				04B6B2F01CBCE45900FB88B8 /* Resources */,
+				04B6B2EF1CBCE45900FB88B8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chat;
+			productName = Chat;
+			productReference = 04B6B2F21CBCE45A00FB88B8 /* Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B6B2EA1CBCE45900FB88B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexandr Zhuk";
+				TargetAttributes = {
+					04B6B2F11CBCE45900FB88B8 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8ZGFH7QHSM;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 04B6B2ED1CBCE45900FB88B8 /* Build configuration list for PBXProject "Chat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04B6B2E91CBCE45900FB88B8;
+			productRefGroup = 04B6B2F31CBCE45A00FB88B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B6B2F11CBCE45900FB88B8 /* Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B6B2F01CBCE45900FB88B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B6B3001CBCE45A00FB88B8 /* LaunchScreen.storyboard in Resources */,
+				04B6B2FD1CBCE45A00FB88B8 /* Assets.xcassets in Resources */,
+				04B6B2FB1CBCE45A00FB88B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B6B2EE1CBCE45900FB88B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B6B30A1CBCEE4600FB88B8 /* SignUpViewController.swift in Sources */,
+				0409546A1CD8A5220047513C /* ChatsTableViewCell.swift in Sources */,
+				040954661CD743FA0047513C /* Block.swift in Sources */,
+				04D9BCDB1CC4CE6E0017D44A /* UsersViewController.swift in Sources */,
+				04B6B3081CBCEE3100FB88B8 /* LoginViewController.swift in Sources */,
+				04B6B2F61CBCE45A00FB88B8 /* AppDelegate.swift in Sources */,
+				04D9BCDF1CC636370017D44A /* ChatViewController.swift in Sources */,
+				04F776A01CC780B7002BDCAC /* ChatMessages.swift in Sources */,
+				04D9BCDD1CC4CEB30017D44A /* UserTableViewCell.swift in Sources */,
+				040954681CD8A4E90047513C /* ChatsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04B6B2F91CBCE45A00FB88B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B6B2FA1CBCE45A00FB88B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04B6B2FE1CBCE45A00FB88B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B6B2FF1CBCE45A00FB88B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B6B3021CBCE45A00FB88B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/lib/backendless",
+					"$(SRCROOT)/lib/CommLibiOS",
+					"$(SRCROOT)/lib/MediaLibiOS3x",
+					"$(SRCROOT)/lib/libav-11.4/lib",
+					"$(SRCROOT)/lib/speex-1.2rc2/lib",
+					"$(SRCROOT)/lib/x264/lib",
+					"$(PROJECT_DIR)/lib/backendless",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04B6B3031CBCE45A00FB88B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/lib/backendless",
+					"$(SRCROOT)/lib/CommLibiOS",
+					"$(SRCROOT)/lib/MediaLibiOS3x",
+					"$(SRCROOT)/lib/libav-11.4/lib",
+					"$(SRCROOT)/lib/speex-1.2rc2/lib",
+					"$(SRCROOT)/lib/x264/lib",
+					"$(PROJECT_DIR)/lib/backendless",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B6B3051CBCE45A00FB88B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alexandr Zhuk (KYM3J5WZLA)";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/**";
+				INFOPLIST_FILE = Chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/lib/backendless",
+					"$(SRCROOT)/lib/CommLibiOS",
+					"$(SRCROOT)/lib/MediaLibiOS3x",
+					"$(SRCROOT)/lib/libav-11.4/lib",
+					"$(SRCROOT)/lib/speex-1.2rc2/lib",
+					"$(SRCROOT)/lib/x264/lib",
+					"$(PROJECT_DIR)/lib/backendless",
+					"$(PROJECT_DIR)/lib/CommLibiOS",
+					"$(PROJECT_DIR)/lib/libav-11.4/lib",
+					"$(PROJECT_DIR)/lib/MediaLibiOS3x",
+					"$(PROJECT_DIR)/lib/speex-1.2rc2/lib",
+					"$(PROJECT_DIR)/lib/x264/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.azhuk.Chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a7b6e26-f507-4c4f-90cb-943e392a4ec2";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04B6B3061CBCE45A00FB88B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alexandr Zhuk (KYM3J5WZLA)";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/lib/**";
+				INFOPLIST_FILE = Chat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/lib/backendless",
+					"$(SRCROOT)/lib/CommLibiOS",
+					"$(SRCROOT)/lib/MediaLibiOS3x",
+					"$(SRCROOT)/lib/libav-11.4/lib",
+					"$(SRCROOT)/lib/speex-1.2rc2/lib",
+					"$(SRCROOT)/lib/x264/lib",
+					"$(PROJECT_DIR)/lib/backendless",
+					"$(PROJECT_DIR)/lib/CommLibiOS",
+					"$(PROJECT_DIR)/lib/libav-11.4/lib",
+					"$(PROJECT_DIR)/lib/MediaLibiOS3x",
+					"$(PROJECT_DIR)/lib/speex-1.2rc2/lib",
+					"$(PROJECT_DIR)/lib/x264/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.azhuk.Chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a7b6e26-f507-4c4f-90cb-943e392a4ec2";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B6B2ED1CBCE45900FB88B8 /* Build configuration list for PBXProject "Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B6B3021CBCE45A00FB88B8 /* Debug */,
+				04B6B3031CBCE45A00FB88B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B6B3041CBCE45A00FB88B8 /* Build configuration list for PBXNativeTarget "Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B6B3051CBCE45A00FB88B8 /* Debug */,
+				04B6B3061CBCE45A00FB88B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04B6B2EA1CBCE45900FB88B8 /* Project object */;
+}
